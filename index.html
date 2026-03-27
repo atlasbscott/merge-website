@@ -74,10 +74,18 @@
   position: absolute;
   inset: 0;
 }
-.sc-hero__bg video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.sc-hero__bg video,
+.sc-hero__bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 177.78vh; /* 16:9 aspect ratio */
+  min-height: 56.25vw;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
 }
 .sc-hero__bg::after {
   content: '';
@@ -528,9 +536,7 @@
      ============================================ -->
 <section class="sc-hero" id="hero">
   <div class="sc-hero__bg">
-    <video autoplay muted loop playsinline>
-      <source src="./Merge Marketing Assets/Videos/Merge North & South Showroom B-Roll.mp4" type="video/mp4">
-    </video>
+    <iframe src="https://www.youtube.com/embed/RIc-buXfLHo?autoplay=1&mute=1&loop=1&playlist=RIc-buXfLHo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
   <div class="sc-hero__content">
     <h1 class="sc-hero__headline">Your dreams. Our passion. The perfect solution.</h1>
