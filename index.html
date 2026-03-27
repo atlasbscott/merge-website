@@ -536,7 +536,7 @@
      ============================================ -->
 <section class="sc-hero" id="hero">
   <div class="sc-hero__bg">
-    <iframe src="https://www.youtube.com/embed/RIc-buXfLHo?autoplay=1&mute=1&loop=1&playlist=RIc-buXfLHo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div id="heroYTPlayer"></div>
   </div>
   <div class="sc-hero__content">
     <h1 class="sc-hero__headline">Your dreams. Our passion. The perfect solution.</h1>
@@ -742,6 +742,7 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
   // Dynamic copyright year
   document.getElementById('currentYear').textContent = new Date().getFullYear();
@@ -753,6 +754,39 @@
     poster.addEventListener('click', function() {
       poster.classList.add('hidden');
       video.play();
+    });
+  }
+
+  // Hero background — YouTube API with forced HD quality
+  var heroPlayer;
+  function onYouTubeIframeAPIReady() {
+    heroPlayer = new YT.Player('heroYTPlayer', {
+      videoId: 'RIc-buXfLHo',
+      playerVars: {
+        autoplay: 1,
+        mute: 1,
+        loop: 1,
+        playlist: 'RIc-buXfLHo',
+        controls: 0,
+        showinfo: 0,
+        rel: 0,
+        modestbranding: 1,
+        playsinline: 1,
+        disablekb: 1,
+        iv_load_policy: 3,
+        vq: 'hd1080'
+      },
+      events: {
+        onReady: function(e) {
+          e.target.setPlaybackQuality('hd1080');
+          e.target.playVideo();
+        },
+        onStateChange: function(e) {
+          if (e.data === YT.PlayerState.PLAYING) {
+            e.target.setPlaybackQuality('hd1080');
+          }
+        }
+      }
     });
   }
 </script>
