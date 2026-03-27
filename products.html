@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Merge Windows &amp; Doors</title>
+<meta name="description" content="Browse the full Merge product catalog. Windows, doors, sliding systems, skylights, and specialty products from 26 premium brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav nav--dark" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="./Merge Marketing Assets/Logos/Merge Logos - RGB_Horizontal Logo - Gold.png" alt="Merge Windows and Doors" id="navLogo">
+    </a>
+    <div class="nav__links">
+      <div class="nav__dropdown">
+        <a href="windows.html" class="nav__link">Windows</a>
+        <div class="nav__dropdown-menu">
+          <a href="brands/andersen.html">Andersen</a>
+          <a href="brands/sierra-pacific.html">Sierra Pacific</a>
+          <a href="brands/mi-windows.html">MI Windows</a>
+          <a href="brands/quantum.html">Quantum</a>
+          <a href="brands/weathershield.html">WeatherShield</a>
+          <a href="brands/windsor-systems.html">Windsor</a>
+          <a href="brands/gerkin.html">Gerkin</a>
+          <a href="brands/velux.html">Velux</a>
+          <a href="brands/loewen.html">Loewen</a>
+        </div>
+      </div>
+      <div class="nav__dropdown">
+        <a href="doors.html" class="nav__link">Doors</a>
+        <div class="nav__dropdown-menu">
+          <a href="brands/lacantina.html">LaCantina</a>
+          <a href="brands/centor.html">Centor</a>
+          <a href="brands/simpson.html">Simpson</a>
+          <a href="brands/thermatru.html">Therma-Tru</a>
+          <a href="brands/glasscraft.html">GlassCraft</a>
+          <a href="brands/trustile.html">TruStile</a>
+          <a href="brands/activwall.html">ActivWall</a>
+          <a href="brands/glenview.html">Glenview</a>
+        </div>
+      </div>
+      <a href="products.html" class="nav__link">Products</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="showroom.html" class="nav__link">Showrooms</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact-us.html" class="nav__link">Contact</a>
+      <a href="request-a-quote.html" class="nav__cta">Request a Quote</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__overlay" id="navOverlay">
+  <a href="windows.html">Windows</a>
+  <a href="doors.html">Doors</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="showroom.html">Showrooms</a>
+  <a href="about.html">About</a>
+  <a href="contact-us.html">Contact</a>
+  <a href="request-a-quote.html" class="nav__cta">Request a Quote</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-bottom: 56px;">
+  <p class="page-hero__label">Products</p>
+  <h1 class="page-hero__heading">The complete collection</h1>
+  <p class="page-hero__desc">Every window, door, and specialty system we carry, from the brands that set the standard. One source, no compromises.</p>
+</section>
+
+<!-- PRODUCT CATALOG -->
+<section class="section section--warm-white" style="padding-top: clamp(40px, 5vw, 64px);">
+  <div class="products__filters" style="margin-bottom: 40px;">
+    <button class="products__filter active" data-filter="all">All</button>
+    <button class="products__filter" data-filter="windows">Windows</button>
+    <button class="products__filter" data-filter="doors">Doors</button>
+    <button class="products__filter" data-filter="sliding-systems">Sliding Systems</button>
+    <button class="products__filter" data-filter="skylights">Skylights</button>
+    <button class="products__filter" data-filter="specialty">Specialty</button>
+  </div>
+
+  <div class="brand-grid">
+
+    <!-- WINDOWS -->
+    <a href="brands/andersen.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=600&q=80" alt="Andersen Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Andersen</h3>
+        <p class="brand-card__desc">America's most recognized window brand, built on over a century of craft and innovation.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/sierra-pacific.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Sierra Pacific Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Sierra Pacific</h3>
+        <p class="brand-card__desc">Vertically integrated manufacturer delivering wood, clad, and aluminum windows with full customization.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/sierra-pacific-wood.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Sierra Pacific Wood Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Sierra Pacific Wood</h3>
+        <p class="brand-card__desc">Premium wood window systems milled from their own sustainably harvested timber.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/sierra-pacific-vinyl.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Sierra Pacific Vinyl Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Sierra Pacific Vinyl</h3>
+        <p class="brand-card__desc">High-performance vinyl windows engineered for durability and energy efficiency at scale.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/mi-windows.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600573472556-e636c2acda9e?w=600&q=80" alt="MI Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">MI Windows</h3>
+        <p class="brand-card__desc">Vinyl and aluminum windows purpose-built for production builders who need consistency and speed.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/quantum.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Quantum Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Quantum</h3>
+        <p class="brand-card__desc">Architectural-grade wood windows with virtually unlimited configurations for custom projects.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/weathershield.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80" alt="WeatherShield Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">WeatherShield</h3>
+        <p class="brand-card__desc">Wood and vinyl windows engineered to perform in the most demanding climates.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/windsor-systems.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Windsor Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Windsor</h3>
+        <p class="brand-card__desc">Handcrafted wood and cellular PVC windows with deep customization options for distinctive homes.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/gerkin.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Gerkin Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Gerkin</h3>
+        <p class="brand-card__desc">Storm-tested aluminum windows and doors built for commercial and high-wind residential applications.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/loewen.html" class="brand-card" data-category="windows">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Loewen Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Windows</p>
+        <h3 class="brand-card__name">Loewen</h3>
+        <p class="brand-card__desc">Douglas fir and mahogany windows crafted in Canada for architects who demand the finest materials.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <!-- SKYLIGHTS -->
+    <a href="brands/velux.html" class="brand-card" data-category="skylights">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=600&q=80" alt="Velux Skylights">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Skylights</p>
+        <h3 class="brand-card__name">Velux</h3>
+        <p class="brand-card__desc">The world leader in skylights and roof windows, bringing natural light where walls cannot.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <!-- SLIDING SYSTEMS -->
+    <a href="brands/lacantina.html" class="brand-card" data-category="sliding-systems">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="LaCantina Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Sliding Systems</p>
+        <h3 class="brand-card__name">LaCantina</h3>
+        <p class="brand-card__desc">Folding, sliding, and stacking door systems that open entire walls to the outdoors.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/centor.html" class="brand-card" data-category="sliding-systems">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="Centor Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Sliding Systems</p>
+        <h3 class="brand-card__name">Centor</h3>
+        <p class="brand-card__desc">Integrated folding door systems with built-in screens, shades, and hardware hidden from view.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/western-window-systems.html" class="brand-card" data-category="sliding-systems">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Western Window Systems">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Sliding Systems</p>
+        <h3 class="brand-card__name">Western Window Systems</h3>
+        <p class="brand-card__desc">Aluminum multi-slide and bi-fold doors designed for modern indoor-outdoor living.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/windor-systems.html" class="brand-card" data-category="sliding-systems">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600566753376-12c8ab7c5a38?w=600&q=80" alt="Windor Systems">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Sliding Systems</p>
+        <h3 class="brand-card__name">Windor Systems</h3>
+        <p class="brand-card__desc">European-engineered lift-and-slide doors with slim sightlines and superior thermal performance.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/activwall.html" class="brand-card" data-category="sliding-systems">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?w=600&q=80" alt="ActivWall Systems">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Sliding Systems</p>
+        <h3 class="brand-card__name">ActivWall</h3>
+        <p class="brand-card__desc">Operable wall systems including folding, sliding, and gas-strut windows for flexible openings.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <!-- DOORS -->
+    <a href="brands/simpson.html" class="brand-card" data-category="doors">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Simpson Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Doors</p>
+        <h3 class="brand-card__name">Simpson</h3>
+        <p class="brand-card__desc">Solid wood entry and interior doors available in hundreds of styles and species.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/thermatru.html" class="brand-card" data-category="doors">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600573472556-e636c2acda9e?w=600&q=80" alt="Therma-Tru Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Doors</p>
+        <h3 class="brand-card__name">Therma-Tru</h3>
+        <p class="brand-card__desc">Fiberglass and steel entry door systems built to resist the elements without sacrificing aesthetics.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/glasscraft.html" class="brand-card" data-category="doors">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="GlassCraft Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Doors</p>
+        <h3 class="brand-card__name">GlassCraft</h3>
+        <p class="brand-card__desc">Artisan entry doors featuring hand-forged wrought iron, carved wood, and decorative glass.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/trustile.html" class="brand-card" data-category="doors">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="TruStile Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Doors</p>
+        <h3 class="brand-card__name">TruStile</h3>
+        <p class="brand-card__desc">Architectural-grade interior doors with modern and traditional profiles in MDF, wood, and glass.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/glenview.html" class="brand-card" data-category="doors">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Glenview Doors">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Doors</p>
+        <h3 class="brand-card__name">Glenview</h3>
+        <p class="brand-card__desc">Custom solid wood entry doors, pivot doors, and iron doors crafted for statement entrances.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <!-- SPECIALTY -->
+    <a href="brands/contempo-steel.html" class="brand-card" data-category="specialty">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Contempo Steel">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Specialty</p>
+        <h3 class="brand-card__name">Contempo Steel</h3>
+        <p class="brand-card__desc">Thermally broken steel windows and doors with narrow profiles for a true industrial aesthetic.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/amsco.html" class="brand-card" data-category="specialty">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Amsco Windows">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Specialty</p>
+        <h3 class="brand-card__name">Amsco</h3>
+        <p class="brand-card__desc">Single-hung and horizontal slider windows designed for multi-family and light commercial projects.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/prescott-industries.html" class="brand-card" data-category="specialty">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Prescott Industries">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Specialty</p>
+        <h3 class="brand-card__name">Prescott Industries</h3>
+        <p class="brand-card__desc">Specialty hardware, screens, and accessories that complement any premium window or door system.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/burris.html" class="brand-card" data-category="specialty">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80" alt="Burris">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Specialty</p>
+        <h3 class="brand-card__name">Burris</h3>
+        <p class="brand-card__desc">Composite and PVC columns, railings, and trim systems for a finished architectural look.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+    <a href="brands/awake.html" class="brand-card" data-category="specialty">
+      <div class="brand-card__img-wrap">
+        <img class="brand-card__img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Awake">
+      </div>
+      <div class="brand-card__info">
+        <p class="brand-card__category">Specialty</p>
+        <h3 class="brand-card__name">Awake</h3>
+        <p class="brand-card__desc">Smart window and door sensors that integrate with modern home automation systems.</p>
+        <span class="brand-card__link">View Collection &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- QUOTE CTA -->
+<section class="section section--ivory">
+  <div class="section__header section__header--center reveal">
+    <p class="section__label">Get Started</p>
+    <h2 class="section__heading">Ready to spec your next project?</h2>
+    <p class="section__desc">Tell us about your build. Our team will match you with the right products, pricing, and lead times.</p>
+    <div style="margin-top: 32px;">
+      <a href="request-a-quote.html" class="btn--gold">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER BRANDS MARQUEE -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span class="marquee__item">Andersen</span>
+    <span class="marquee__item">LaCantina</span>
+    <span class="marquee__item">Glenview</span>
+    <span class="marquee__item">Simpson</span>
+    <span class="marquee__item">Windsor</span>
+    <span class="marquee__item">Western Window Systems</span>
+    <span class="marquee__item">Centor</span>
+    <span class="marquee__item">Velux</span>
+    <span class="marquee__item">Weather Shield</span>
+    <span class="marquee__item">Therma-Tru</span>
+    <span class="marquee__item">Andersen</span>
+    <span class="marquee__item">LaCantina</span>
+    <span class="marquee__item">Glenview</span>
+    <span class="marquee__item">Simpson</span>
+    <span class="marquee__item">Windsor</span>
+    <span class="marquee__item">Western Window Systems</span>
+    <span class="marquee__item">Centor</span>
+    <span class="marquee__item">Velux</span>
+    <span class="marquee__item">Weather Shield</span>
+    <span class="marquee__item">Therma-Tru</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="./Merge Marketing Assets/Logos/Merge Logos - RGB_Horizontal Logo - White.png" alt="Merge Windows and Doors">
+        </div>
+        <p class="footer__tagline">Premium windows and doors for the builders, architects, and designers who demand more.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Products</h4>
+        <ul>
+          <li><a href="windows.html">Windows</a></li>
+          <li><a href="doors.html">Doors</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="showroom.html">Showrooms</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Resources</h4>
+        <ul>
+          <li><a href="resources.html">Product Resources</a></li>
+          <li><a href="request-a-quote.html">Request a Quote</a></li>
+          <li><a href="request-service.html">Request Service</a></li>
+          <li><a href="virtual-tours.html">Virtual Tours</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Merge Windows &amp; Doors. All rights reserved. <a href="policies.html" style="color:inherit;text-decoration:underline;">Policies</a></p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Houzz">
+          <svg viewBox="0 0 24 24"><path d="M12.5 3v5.5L7 11v5.5l5.5 2.5V24l5.5-2.5V16l-5.5-2.5V8l5.5 2.5V5.5L12.5 3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

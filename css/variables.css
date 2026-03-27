@@ -1,0 +1,35 @@
+/* ============================================
+   DESIGN TOKENS — Merge Windows & Doors
+   ============================================ */
+
+:root {
+  /* Colors */
+  --near-black: #0a0906;
+  --charcoal: #161410;
+  --gold: #C6A575;
+  --light-gold: #d4b98e;
+  --ivory: #f0ebe0;
+  --warm-white: #faf8f3;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Layout */
+  --nav-height: 80px;
+  --section-pad: clamp(80px, 10vw, 140px);
+  --side-pad: clamp(24px, 5vw, 80px);
+  --max-width: 1280px;
+  --max-width-wide: 1440px;
+
+  /* Transitions */
+  --ease: 0.3s ease;
+  --ease-slow: 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
+}

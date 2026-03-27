@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | Merge Windows &amp; Doors</title>
+<meta name="description" content="Join the Merge team. We are hiring skilled professionals who are passionate about premium building products and exceptional service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav nav--dark" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="./Merge Marketing Assets/Logos/Merge Logos - RGB_Horizontal Logo - Gold.png" alt="Merge Windows and Doors" id="navLogo">
+    </a>
+    <div class="nav__links">
+      <div class="nav__dropdown">
+        <a href="windows.html" class="nav__link">Windows</a>
+        <div class="nav__dropdown-menu">
+          <a href="brands/andersen.html">Andersen</a>
+          <a href="brands/sierra-pacific.html">Sierra Pacific</a>
+          <a href="brands/mi-windows.html">MI Windows</a>
+          <a href="brands/quantum.html">Quantum</a>
+          <a href="brands/weathershield.html">WeatherShield</a>
+          <a href="brands/windsor-systems.html">Windsor</a>
+          <a href="brands/gerkin.html">Gerkin</a>
+          <a href="brands/velux.html">Velux</a>
+          <a href="brands/loewen.html">Loewen</a>
+        </div>
+      </div>
+      <div class="nav__dropdown">
+        <a href="doors.html" class="nav__link">Doors</a>
+        <div class="nav__dropdown-menu">
+          <a href="brands/lacantina.html">LaCantina</a>
+          <a href="brands/centor.html">Centor</a>
+          <a href="brands/simpson.html">Simpson</a>
+          <a href="brands/thermatru.html">Therma-Tru</a>
+          <a href="brands/glasscraft.html">GlassCraft</a>
+          <a href="brands/trustile.html">TruStile</a>
+          <a href="brands/activwall.html">ActivWall</a>
+          <a href="brands/glenview.html">Glenview</a>
+        </div>
+      </div>
+      <a href="products.html" class="nav__link">Products</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="showroom.html" class="nav__link">Showrooms</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="contact-us.html" class="nav__link">Contact</a>
+      <a href="request-a-quote.html" class="nav__cta">Request a Quote</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__overlay" id="navOverlay">
+  <a href="windows.html">Windows</a>
+  <a href="doors.html">Doors</a>
+  <a href="products.html">Products</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="showroom.html">Showrooms</a>
+  <a href="about.html">About</a>
+  <a href="contact-us.html">Contact</a>
+  <a href="request-a-quote.html" class="nav__cta">Request a Quote</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <p class="section__label">Careers</p>
+    <h1 class="page-hero__heading">Build something that matters</h1>
+    <p class="page-hero__desc">Merge is growing, and we are looking for people who care about craft, service, and doing things the right way. If that sounds like you, we should talk.</p>
+  </div>
+</section>
+
+
+<!-- JOB LISTINGS -->
+<section class="section section--ivory" id="positions">
+  <style>
+    .jobs__header {
+      text-align: center;
+      max-width: var(--max-width);
+      margin: 0 auto 56px;
+    }
+    .jobs__count {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(198,165,117,.1);
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-top: 16px;
+    }
+    .jobs__list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .job {
+      background: var(--white);
+      border-radius: 6px;
+      border: 1px solid rgba(10,9,6,.06);
+      overflow: hidden;
+      transition: border-color .3s ease, box-shadow .3s ease;
+    }
+    .job:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 24px rgba(198,165,117,.1);
+    }
+    .job__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 32px;
+      cursor: pointer;
+      gap: 16px;
+    }
+    .job__left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1;
+      min-width: 0;
+    }
+    .job__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(198,165,117,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .job__icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .job__info { min-width: 0; }
+    .job__title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--near-black);
+      margin-bottom: 4px;
+    }
+    .job__tags {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .job__tag {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(22,20,16,.5);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .job__tag svg {
+      width: 13px;
+      height: 13px;
+      stroke: rgba(22,20,16,.35);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .job__toggle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(10,9,6,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background .3s ease, border-color .3s ease;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .job:hover .job__toggle {
+      border-color: var(--gold);
+    }
+    .job__toggle svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--near-black);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      transition: transform .3s ease;
+    }
+    .job.open .job__toggle svg {
+      transform: rotate(180deg);
+    }
+    .job.open .job__toggle {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+    .job.open .job__toggle svg {
+      stroke: var(--white);
+    }
+    .job__detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+    .job.open .job__detail {
+      max-height: 500px;
+    }
+    .job__detail-inner {
+      padding: 0 32px 32px;
+      border-top: 1px solid rgba(10,9,6,.06);
+      padding-top: 24px;
+    }
+    .job__desc {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(22,20,16,.65);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 680px;
+    }
+    .job__apply {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .job__apply svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--near-black);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      transition: stroke .3s ease, transform .3s ease;
+    }
+    .job__apply:hover svg {
+      stroke: var(--near-black);
+      transform: translateX(3px);
+    }
+    @media (max-width: 768px) {
+      .job__top { padding: 20px 20px; gap: 12px; }
+      .job__icon { width: 40px; height: 40px; border-radius: 8px; }
+      .job__icon svg { width: 18px; height: 18px; }
+      .job__title { font-size: 18px; }
+      .job__detail-inner { padding: 0 20px 24px; padding-top: 20px; }
+      .job__left { gap: 14px; }
+    }
+  </style>
+
+  <div class="jobs__header reveal">
+    <p class="section__label">Open Positions</p>
+    <h2 class="section__heading">Current opportunities</h2>
+    <span class="jobs__count">3 open roles</span>
+  </div>
+
+  <div class="jobs__list reveal">
+
+    <!-- Job 1 -->
+    <div class="job">
+      <div class="job__top" onclick="this.parentElement.classList.toggle('open')">
+        <div class="job__left">
+          <div class="job__icon">
+            <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+          </div>
+          <div class="job__info">
+            <h3 class="job__title">Project Coordinator</h3>
+            <div class="job__tags">
+              <span class="job__tag"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Mansfield, TX</span>
+              <span class="job__tag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Full-Time</span>
+            </div>
+          </div>
+        </div>
+        <button class="job__toggle" aria-label="Expand">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <div class="job__detail">
+        <div class="job__detail-inner">
+          <p class="job__desc">Manage window and door orders from quote through delivery. You will work closely with builders and manufacturers to keep projects on schedule, resolve issues before they become problems, and ensure every order ships correctly.</p>
+          <a href="contact-us.html" class="btn--gold job__apply">Apply Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job">
+      <div class="job__top" onclick="this.parentElement.classList.toggle('open')">
+        <div class="job__left">
+          <div class="job__icon">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="job__info">
+            <h3 class="job__title">Showroom Sales Consultant</h3>
+            <div class="job__tags">
+              <span class="job__tag"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> The Colony, TX</span>
+              <span class="job__tag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Full-Time</span>
+            </div>
+          </div>
+        </div>
+        <button class="job__toggle" aria-label="Expand">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <div class="job__detail">
+        <div class="job__detail-inner">
+          <p class="job__desc">Guide builders, designers, and homeowners through our product lines. You will develop deep product knowledge across multiple brands and help clients select the right windows and doors for their projects. Prior experience in building products or architectural sales preferred.</p>
+          <a href="contact-us.html" class="btn--gold job__apply">Apply Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="job">
+      <div class="job__top" onclick="this.parentElement.classList.toggle('open')">
+        <div class="job__left">
+          <div class="job__icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91A6 6 0 013.77 2.93l3.77 3.77a1 1 0 001.4 0l1.6-1.6a1 1 0 000-1.4"/></svg>
+          </div>
+          <div class="job__info">
+            <h3 class="job__title">Service Technician</h3>
+            <div class="job__tags">
+              <span class="job__tag"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> DFW Area</span>
+              <span class="job__tag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Full-Time</span>
+            </div>
+          </div>
+        </div>
+        <button class="job__toggle" aria-label="Expand">
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <div class="job__detail">
+        <div class="job__detail-inner">
+          <p class="job__desc">Handle on-site warranty work, adjustments, and product assessments. You will troubleshoot window and door performance issues, coordinate with manufacturers on warranty claims, and ensure every service call is resolved to standard.</p>
+          <a href="contact-us.html" class="btn--gold job__apply">Apply Now <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA — Don't see the right fit? -->
+<section class="section section--warm-white">
+  <div class="reveal" style="text-align:center;max-width:500px;margin:0 auto;">
+    <h2 class="section__heading">Don't see the right fit?</h2>
+    <p class="section__desc" style="margin:12px auto 32px;max-width:420px;">We are always interested in hearing from talented people. Send us your resume and tell us what you bring to the table.</p>
+    <a href="contact-us.html" class="btn--gold">Get in Touch</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="./Merge Marketing Assets/Logos/Merge Logos - RGB_Horizontal Logo - White.png" alt="Merge Windows and Doors">
+        </div>
+        <p class="footer__tagline">Premium windows and doors for the builders, architects, and designers who demand more.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Products</h4>
+        <ul>
+          <li><a href="windows.html">Windows</a></li>
+          <li><a href="doors.html">Doors</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="showroom.html">Showrooms</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Resources</h4>
+        <ul>
+          <li><a href="resources.html">Product Resources</a></li>
+          <li><a href="request-a-quote.html">Request a Quote</a></li>
+          <li><a href="request-service.html">Request Service</a></li>
+          <li><a href="virtual-tours.html">Virtual Tours</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Merge Windows &amp; Doors. All rights reserved. <a href="policies.html" style="color:inherit;text-decoration:underline;">Policies</a></p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Houzz">
+          <svg viewBox="0 0 24 24"><path d="M12.5 3v5.5L7 11v5.5l5.5 2.5V24l5.5-2.5V16l-5.5-2.5V8l5.5 2.5V5.5L12.5 3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Large video files (too big for GitHub)
+Merge Marketing Assets/Videos/
+
+# OS files
+.DS_Store
+Thumbs.db
